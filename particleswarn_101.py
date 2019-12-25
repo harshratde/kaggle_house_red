@@ -17,6 +17,8 @@ ub = [2, 6]
 
 xopt, fopt = pso(banana, lb, ub, f_ieqcons=con)
 
+con(xopt)
+
 # Optimum should be around x=[0.5, 0.76] with banana(x)=4.5 and con(x)=0
 #banana(xopt)
 #========================================================================
